@@ -48,7 +48,7 @@ table {
 
 /* LAYOUT STYLES */
 body {
-a {
+{
   color: #2879d0;
 }
 a:hover {
@@ -65,7 +65,7 @@ a:hover {
 
 
 header {
-a {
+{
   color: #ffffff;
 }
 a:hover {
