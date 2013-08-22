@@ -48,12 +48,12 @@ table {
 
 /* LAYOUT STYLES */
 body {
-  a {
+a {
   color: #2879d0;
-    }
-  a:hover {
+}
+a:hover {
   color: #2268b2;
-          }
+}
   font-size: 15px;
   line-height: 1.5; 
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
@@ -65,12 +65,12 @@ body {
 
 
 header {
-  a {
+a {
   color: #ffffff;
-    }
-  a:hover {
+}
+a:hover {
   color: #2268b2;
-          }
+}
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
