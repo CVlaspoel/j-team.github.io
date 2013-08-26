@@ -348,7 +348,7 @@ dl dd {
 }
 
 footer {
-  background: center transparent url('../images/footer-bg.jpg') 0 0 no-repeat;
+  background: center, transparent url('../images/footer-bg.jpg') 0 0 no-repeat;
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
