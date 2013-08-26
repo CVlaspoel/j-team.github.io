@@ -349,7 +349,6 @@ dl dd {
 
 footer {
   background: transparent url('../images/footer-bg.jpg') 0 0 no-repeat;
-  background-repeat:no-repeat;
   background-attachment:fixed;
   background-position:center;
   margin-top: 40px;
