@@ -31,7 +31,8 @@
           <h3>
 <a name="sources" class="anchor" href="#sources"><span class="octicon octicon-link"></span></a>Download Sources</h3>
 Follow from point 0 to 4 <a href="http://forum.xda-developers.com/showthread.php?t=2351504">here</a> and then, continue here.
-For download the sources
+<br></br>
+To download the sources:
 
 <pre><code>
 $ mkdir ~/your_folder 
@@ -47,20 +48,22 @@ $ repo sync
 again
 
 
-<h2>
-<a name="build" class="anchor" href="#way"><span class="octicon octicon-link"></span></a>Now to build and rebuild you have two ways</h2>
-<h2>
-<a name="build" class="anchor" href="#way1"><span class="octicon octicon-link"></span></a>Way 1 (simpler and faster):</h2>
-
 <h3>
-<a name="build" class="anchor" href="#build1"><span class="octicon octicon-link"></span></a>Build the sources</h3>
+<a name="build" class="anchor" href="#way"><span class="octicon octicon-link"></span></a>Now to build and rebuild you have two ways</h3>
+<h3>
+<a name="build" class="anchor" href="#way1"><span class="octicon octicon-link"></span></a>Way 1 (simpler and faster):</h3>
+
+<h4>
+<a name="build" class="anchor" href="#build1"><span class="octicon octicon-link"></span></a>Build the sources</h4>
 To build the sources, go to your_folder/build and edit the build.sh:
 <pre><code>
 # Write here your pc's number of cores + number of threads
 NBR="*"
 </code></pre>
 Replace * with numbers of cores of your PC+threads (if you have a old computer, this is 1)
+
 <br></br>
+
 Now open the terminal and write this:
 <pre><code>
 $ cd ~/your_folder
@@ -68,8 +71,8 @@ $ . build.sh
 <pre><code>
 
 
-<h3>
-<a name="rebuild" class="anchor" href="#rebuild1"><span class="octicon octicon-link"></span></a>Rebuild</h3>
+<h4>
+<a name="rebuild" class="anchor" href="#rebuild1"><span class="octicon octicon-link"></span></a>Rebuild</h4>
 To rebuild the source after some edits, write this in your Terminal:
 <pre><code>
 $ make clobber
@@ -78,11 +81,11 @@ $ . build.sh
 
 
 
-<h2>
-<a name="build" class="anchor" href="#way2"><span class="octicon octicon-link"></span></a>Way 2:</h2>
-
 <h3>
-<a name="build" class="anchor" href="#build2"><span class="octicon octicon-link"></span></a>Build the sources</h3>
+<a name="build" class="anchor" href="#way2"><span class="octicon octicon-link"></span></a>Way 2:</h3>
+
+<h4>
+<a name="build" class="anchor" href="#build2"><span class="octicon octicon-link"></span></a>Build the sources</h4>
 To build the source type these in Terminal:
 <pre><code>
 $ . build/envsetup.sh
@@ -91,8 +94,8 @@ $ make otapackage -j*
 </code></pre>
 Replace * with numbers of cores of your PC+threads (if you have a old computer, this is 1)
 
-<h3>
-<a name="rebuild" class="anchor" href="#rebuild2"><span class="octicon octicon-link"></span></a>Rebuild</h3>
+<h4>
+<a name="rebuild" class="anchor" href="#rebuild2"><span class="octicon octicon-link"></span></a>Rebuild</h4>
 To rebuild the source after some edits, write this in your Terminal:
 <pre><code>
 $ . build/envsetup.sh
