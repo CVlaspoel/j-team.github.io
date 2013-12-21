@@ -53,14 +53,14 @@ again
 <a name="build" class="anchor" href="#way1"><span class="octicon octicon-link"></span></a>Way 1 (simpler and faster):</h2>
 
 <h3>
-<a name="build" class="anchor" href="#build2"><span class="octicon octicon-link"></span></a>Build the sources</h3>
+<a name="build" class="anchor" href="#build1"><span class="octicon octicon-link"></span></a>Build the sources</h3>
 To build the sources, go to your_folder/build and edit the build.sh:
 <pre><code>
 # Write here your pc's number of cores + number of threads
 NBR="*"
 </code></pre>
 Replace * with numbers of cores of your PC+threads (if you have a old computer, this is 1)
-
+<br></br>
 Now open the terminal and write this:
 <pre><code>
 $ cd ~/your_folder
@@ -69,7 +69,7 @@ $ . build.sh
 
 
 <h3>
-<a name="rebuild" class="anchor" href="#rebuild2"><span class="octicon octicon-link"></span></a>Rebuild</h3>
+<a name="rebuild" class="anchor" href="#rebuild1"><span class="octicon octicon-link"></span></a>Rebuild</h3>
 To rebuild the source after some edits, write this in your Terminal:
 <pre><code>
 $ make clobber
@@ -101,6 +101,7 @@ $ make clean
 $ make otapackage -j*
 </code></pre>
 Replace * with numbers of cores of your PC+threads (if you have a old computer, this is 1)
+
 
 <h3>
 <a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download Center</h3>
