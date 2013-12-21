@@ -55,20 +55,12 @@ again
 
 <h4>
 <a name="build" class="anchor" href="#build1"><span class="octicon octicon-link"></span></a>Build the sources</h4>
-To build the sources, go to your_folder/build and edit the build.sh:
-<pre><code>
-# Write here your pc's number of cores + number of threads
-NBR="*"
-</code></pre>
-Replace * with numbers of cores of your PC+threads (if you have a old computer, this is 1)
-
-<br></br>
-
-Now open the terminal and write this:
+To build the sources, open the terminal and write this:
 <pre><code>
 $ cd ~/your_folder
-$ . build.sh
+$ . build.sh *
 </pre></code>
+Replace * with numbers of cores of your PC+threads (if you have a old computer, thread this is 1)
 
 
 <h4>
@@ -92,7 +84,7 @@ $ . build/envsetup.sh
 $ lunch full_janice-userdebug
 $ make otapackage -j*
 </code></pre>
-Replace * with numbers of cores of your PC+threads (if you have a old computer, this is 1)
+Replace * with numbers of cores of your PC+threads (if you have a old computer, thread this is 1)
 <br></br>
 
 <h4>
@@ -104,7 +96,7 @@ $ lunch full_janice-userdebug
 $ make clean
 $ make otapackage -j*
 </code></pre>
-Replace * with numbers of cores of your PC+threads (if you have a old computer, this is 1)
+Replace * with numbers of cores of your PC+threads (if you have a old computer, thread this is 1)
 
 
 <h3>
