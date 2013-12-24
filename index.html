@@ -8,8 +8,21 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/bar.css" media="screen" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+    	$(function(){
+    		$('#bar_change').click(function(){
+    			var bar = $('.progress-bar span');
+    			var value = 89;
+    			bar.css('width', value + '%');
+    			return false;
+    		});
+    	});
+    </script>
 	
-	<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
@@ -22,6 +35,13 @@
         <center><h1><a href="http://j-team.github.io/">J-Team</a></h1></center>
         <center><h2>AOSP for GT-I9070 janice/janicep</h2></center>
         <a href="https://github.com/J-Team" class="button"><small>Follow us on</small>GitHub</a>
+      </div>
+      <div class="progress-bar">
+      	<span></span>
+      </div>
+      <div class="controls">
+      	<label for="bar_value">89%</label>
+      	<input type="submit" id="bar_change" value="Press me!">
       </div>
     </header>
 	
