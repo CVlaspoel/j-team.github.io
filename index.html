@@ -35,75 +35,9 @@
 Read latest news <a href="http://j-team.github.io/blog.html">here</a>.
 
 <h3>
-<a name="sources" class="anchor" href="#sources"><span class="octicon octicon-link"></span></a>Download Sources</h3>
-Follow from point 0 to 4 <a href="http://forum.xda-developers.com/showthread.php?t=2351504">here</a> and then, continue here.
-<br></br>
-To download the sources:
+<a name="sources" class="anchor" href="#sources"><span class="octicon octicon-link"></span></a>How to build</h3>
 
-<pre><code>
-$ mkdir ~/your_folder 
-$ cd ~/your_folder
-$ repo init -u git://github.com/J-Team/platform_manifest.git -b kitkat
-$ repo sync
-</code></pre>
-
-To update the changes
-<pre><code>
-$ repo sync
-</code></pre>
-again
-
-
-<h3>
-<a name="build" class="anchor" href="#way"><span class="octicon octicon-link"></span></a>Now to build and rebuild you have two ways</h3>
-<h3>
-<a name="build" class="anchor" href="#way1"><span class="octicon octicon-link"></span></a>Way 1 (simpler and faster):</h3>
-
-<h4>
-<a name="build" class="anchor" href="#build1"><span class="octicon octicon-link"></span></a>Build the sources</h4>
-To build the sources, open the terminal and write this:
-<pre><code>
-$ cd ~/your_folder
-$ . build.sh *
-</pre></code>
-Replace * with numbers of cores of your PC+threads (if you have a old computer, thread is 1)
-<br></br>
-
-<h4>
-<a name="rebuild" class="anchor" href="#rebuild1"><span class="octicon octicon-link"></span></a>Rebuild</h4>
-To rebuild the source after some edits, write this in your Terminal:
-<pre><code>
-$ make clobber
-$ . build.sh
-</code></pre>
-
-
-
-<h3>
-<a name="build" class="anchor" href="#way2"><span class="octicon octicon-link"></span></a>Way 2:</h3>
-
-<h4>
-<a name="build" class="anchor" href="#build2"><span class="octicon octicon-link"></span></a>Build the sources</h4>
-To build the source type these in Terminal:
-<pre><code>
-$ . build/envsetup.sh
-$ lunch full_janice-userdebug
-$ make otapackage -j*
-</code></pre>
-Replace * with numbers of cores of your PC+threads (if you have a old computer, thread is 1)
-<br></br>
-
-<h4>
-<a name="rebuild" class="anchor" href="#rebuild2"><span class="octicon octicon-link"></span></a>Rebuild</h4>
-To rebuild the source after some edits, write this in your Terminal:
-<pre><code>
-$ . build/envsetup.sh
-$ lunch full_janice-userdebug
-$ make clean
-$ make otapackage -j*
-</code></pre>
-Replace * with numbers of cores of your PC+threads (if you have a old computer, thread is 1)
-
+To build from source our AOSP ROM, go <a href="http://j-team.github.io/build.html">here</a>
 
 <h3>
 <a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download Center</h3>
